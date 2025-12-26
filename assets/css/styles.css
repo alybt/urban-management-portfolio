@@ -1,0 +1,26 @@
+:root{
+    --primary-color: #251945;
+    --secondary-color: #6E50A6;
+    --accent-color: #E7C8A3;
+    --background-color: #6F5B90;
+    --text-color: #D5B1FB;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
