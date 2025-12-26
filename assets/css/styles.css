@@ -15,12 +15,22 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--dark-color);
+    color: var(--text-color);
     overflow-x: hidden;
     line-height: 1.6;
+    background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+a.nav-link{
+    color: var(--text-color) !important;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
