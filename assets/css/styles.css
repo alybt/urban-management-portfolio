@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ParagraphFont';  
+  src: url('fonts/AlbertSans-VariableFont_wght.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -331,7 +338,8 @@ section#home.hero-section{
 }
  
 .about .container p{
-  font-size: 0.8rem;  
+  font-size: 0.8rem;
+  font-family: 'ParagraphFont', sans-serif;  
 }
 
 .about .container h2{
