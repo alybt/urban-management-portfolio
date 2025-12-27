@@ -325,9 +325,13 @@ section#home.hero-section{
 .about .container{
   position: relative;
   z-index: 5;
-  margin-top: 7rem;
-  margin-left: 7rem;
-  gap: 1rem;
+
+  margin-top: 5rem;
+  margin-left: auto; 
+  margin-right: auto; 
+
+  padding-left: 3rem; 
+  padding-right: 3rem;
 }
 
 .about .container .row-1{ 
@@ -356,22 +360,24 @@ section#home.hero-section{
 /* .about .col-education div {
   margin-left: .5rem;
 } */
-
+ 
 .about div .row-title {
   background-color: var(--primary-color);
   align-items: center; 
   padding: .5rem;
+  width: 100%;
 }
 
 .about div .row-title h5 {
   font-size: 1rem;
 }
 
-.about div.row-paragraph {
+.about div .row-paragraph {
   background-color: var(--text-color); 
   color: var(--primary-color);
-  padding: .5rem;
-  width: 100%;
+  align-items: center; 
+  padding: .5rem; 
+  margin-left: .9px;
 }
 
 .about div.row-paragraph h6 {
@@ -393,7 +399,7 @@ section#home.hero-section{
   background-size: 100% 100%;
 }
 
-@media (max-width: 820px) {
+/* @media (max-width: 820px) {
   .about {
     min-height: auto;
     padding-bottom: 2rem;
@@ -535,4 +541,4 @@ section#home.hero-section{
   .about .overlay {
     width: 100vw;
   }
-}
+} */
