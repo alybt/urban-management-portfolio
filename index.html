@@ -43,17 +43,17 @@
     </nav>
  
     <main>
-       <section class = "hero">
+       <section id="home" class="hero">
             <img src="assets/image/Frame1.svg" alt="" class="bg-image">
             <img src="assets/image/ElectroBG.svg" alt="" class="overlay">
             <img src="assets/image/Keqing.png" alt="" class="keqing">
             <img src="assets/image/Circle.png" alt="" class="circle">
        </section>
 
-       <section class = "about" id="about">
-
-
-       </section>
+       <section id="about" class="section about about-section">
+            <img src="assets/image/Frame1.svg" alt="" class="bg-image">
+           
+        </section>
 
     </main>
 
@@ -62,8 +62,33 @@
     <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const hero = document.querySelector('.hero');
 
+        function updateNavPosition() {
+            const heroR = hero.getBoundingClientRect();
+            const heroH = hero.offsetHeight;
+            const navH = navbar.offsetHeight;
+            const scrollY = window.scrollY;
+ 
+            if (!navbar.classList.contains('sticky')) {
+                navbar.style.top = `${heroR.top + heroH - navH + scrollY}px`;
+            }
+ 
+            const triggerPoint = heroR.top + heroH - navH;
+            if (scrollY >= triggerPoint) {
+                navbar.classList.add('sticky');
+                navbar.style.top = '0'; 
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
+
+        window.addEventListener('scroll', updateNavPosition);
+        window.addEventListener('resize', updateNavPosition);
+        updateNavPosition(); 
+    </script>
 
 </body>
 </html>
