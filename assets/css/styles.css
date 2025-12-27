@@ -6,6 +6,13 @@
     --text-color: #D5B1FB;
 }
 
+@font-face {
+  font-family: 'TabFont';  
+  src: url('fonts/ScopeOne-Regular.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -14,7 +21,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'TabFont', sans-serif;
     color: var(--text-color);
     overflow-x: hidden;
     line-height: 1.6;
@@ -36,14 +43,20 @@ a.nav-link{
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
+    font-size: 1.4rem;
 }
  
-.navbar.sticky {
+.navbar .sticky {
     position: fixed;
     top: 0;
     bottom: auto;
     background: rgba(37, 25, 69, 0.95);
     backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-item{
+  padding-left: .5rem;
+  padding-right: .50rem;
 }
 
 /* HERO SECTION */ 
@@ -56,8 +69,8 @@ section#home.hero-section{
     position: relative;
     width: 100%;
     height: 100vh;  
-    overflow: hidden;
-    margin-top: 1rem;
+    overflow: hidden; 
+  background-image: linear-gradient(#251945, #5C3EAB); 
 }
 
 .hero img {
@@ -90,6 +103,7 @@ section#home.hero-section{
 .hero .keqing {
     z-index: 4;
 }
+
 
 .hero::after {
     content: "";
