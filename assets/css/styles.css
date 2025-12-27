@@ -67,10 +67,15 @@ a.nav-link{
 }
 
 .navbar.sticky .logo {
-    height: 5rem;
+    height: 3rem;
     transform: none;
     margin-left: 2rem;  
 }
+
+.navbar.sticky .nav-item{
+  font-size: 17px;
+}
+
 
 /* HERO SECTION */ 
 section#home.hero-section{
