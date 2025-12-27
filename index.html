@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Keqing Website</title>
+    <title>Website</title>
 </head>
 <body>
 
@@ -36,9 +36,13 @@
 
 
     <main>
-        <div class="hero">
+       <section class = "hero">
+            <img src="assets/image/Frame.png" alt="" class="bg-image">
+            <img src="assets/image/ElectroBG.svg" alt="" class="overlay">
+            <img src="assets/image/Keqing.png" alt="" class="keqing">
+            <img src="assets/image/Circle.png" alt="" class="circle">
+       </section>
 
-        </div>
     </main>
 
     
@@ -47,6 +51,19 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
+        const nav = document.querySelector('.nav-bar');
+        const hero = document.querySelector('.hero');
+
+        window.addEventListener('scroll', () => {
+            const heroBottom = hero.getBoundingClientRect().bottom;
+
+            if (heroBottom <= 0) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+        });
+
         $(document).ready(function(){
              $('.navbar-nav a, .btn-custom').on('click', function(e) {
                 if (this.hash !== '') {
