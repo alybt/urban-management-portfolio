@@ -378,6 +378,16 @@ section#home.hero-section{
   margin-bottom: .5rem;
 } 
 
-.about div.row-paragraph p,{
+.about div.row-paragraph p{
   font-size: 0.7rem;
+}
+
+.about .row2 .col-skills { 
+  color: var(--primary-color);
+  background-image: url('../image/Subtract.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
 }
