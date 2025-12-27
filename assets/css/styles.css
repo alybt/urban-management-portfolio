@@ -13,6 +13,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HeaderFont';  
+  src: url('fonts/OrelegaOne-Regular.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -332,5 +338,6 @@ section#home.hero-section{
   font-size: 3rem; 
   transform: translateY(-400%);
   height: 10px;
+  font-family: 'HeaderFont', sans-serif;
 
 }
