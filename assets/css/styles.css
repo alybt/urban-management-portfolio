@@ -216,7 +216,8 @@ section#home.hero-section{
   width: 100%;
   background-color: var(--text-color);
   color: var(--primary-color);
-  padding: .5rem; 
+  padding: .5rem;
+  border: solid #A490D7 5px;
   
 
 }
@@ -227,6 +228,12 @@ section#home.hero-section{
 }
 
 .about .container h2{
+  font-size: 3rem;   
+  font-family: 'HeaderFont', sans-serif;
+
+}
+
+.about .container .row-1 h2{
   font-size: 3rem; 
   transform: translateY(-400%);
   height: 10px;
@@ -234,24 +241,31 @@ section#home.hero-section{
 
 }
 
-/* .about .col-education div {
-  margin-left: .5rem;
-} */
+.about .container h2{
+  font-size: 3rem;   
+  font-family: 'HeaderFont', sans-serif;
+
+}
  
 .about div .row-title {
   background-color: var(--primary-color);
-  align-items: center; 
-  padding: .5rem;
   width: 100%;
+  border-radius: 20px 20px 5px 5px; 
+  display: flex;
+  align-items: center;  
+  padding: .5rem;
 }
 
 .about div .row-title h5 {
+  display: flex; 
+  margin-left: .5rem;
   font-size: 1rem;
 }
 
 .about div .row-paragraph {
-  background-color: var(--text-color); 
-  color: var(--primary-color);
+  
+  background-image: linear-gradient(to top, #5d3eab00 17%, #725B99 100%); 
+  color: var(--text-color);
   align-items: center; 
   padding: .5rem; 
   margin-left: .9px;
@@ -266,14 +280,13 @@ section#home.hero-section{
   font-size: 0.7rem;
 }
 
+
+
 .about .row2 .col-skills { 
-  color: var(--primary-color);
-  background-image: url('../image/Subtract.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100% 100%;
+  color: var(--primary-color); 
+  background-color: #D5B1FB;
+  border: solid 5px #251944;
+  margin-top: 1rem;
 }
 
 /* MEDIA */
