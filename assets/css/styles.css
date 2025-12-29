@@ -347,6 +347,19 @@ section#home.hero-section{
   left: -.8rem;
 }
 
+.experience .timeline-content {
+  background: var(--accent-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--primary-color);
+  box-shadow: 0 .1rem .8rem #25194486;
+  transition: all 0.3s ease;
+}
+
+.experience .timeline-content:hover {  
+  transform: translateY(-1rem);
+}
+
 /* MEDIA */
 
 @media (max-width: 1199px) {
