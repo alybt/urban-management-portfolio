@@ -370,6 +370,26 @@ section#home.hero-section{
   padding: .3rem 1rem;
   border-radius: 1rem; 
 }
+
+.experience .timeline-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: .5rem;
+}
+
+.experience .timeline-content h6 {
+  font-size: .8rem;
+  color: var(--secondary-color);
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.experience .timeline-content ul {
+  list-style: none;
+  text-align: justify;
+}
+
 /* MEDIA */
 
 @media (max-width: 1199px) {
