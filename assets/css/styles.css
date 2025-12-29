@@ -295,6 +295,15 @@ section#home.hero-section{
 
 /* EXPERIENCE */
 
+.experience{
+  margin-top: 2rem;
+}
+
+.experience .container .section-title h2{
+  font-size: 3rem;
+  font-family: 'HeaderFont', sans-serif;
+}
+
 .experience .timeline {
   position: relative;
   padding: 1rem 0;
@@ -388,6 +397,11 @@ section#home.hero-section{
 .experience .timeline-content ul {
   list-style: none;
   text-align: justify;
+}
+
+.experience .timeline-content p {
+  color: #6F5B90;
+  line-height: .5;
 }
 
 /* MEDIA */
