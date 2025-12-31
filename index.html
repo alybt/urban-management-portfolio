@@ -191,30 +191,33 @@
     <script>
         const navbar = document.querySelector('.navbar');
         const hero = document.querySelector('.hero');
+        const main = document.querySelector('main');
 
         function updateNavPosition() {
-            const heroR = hero.getBoundingClientRect();
-            const heroH = hero.offsetHeight;
-            const navH = navbar.offsetHeight;
-            const scrollY = window.scrollY;
- 
-            if (!navbar.classList.contains('sticky')) {
-                navbar.style.top = `${heroR.top + heroH - navH + scrollY}px`;
-            }
- 
-            const triggerPoint = heroR.top + heroH - navH;
-            if (scrollY >= triggerPoint) {
-                navbar.classList.add('sticky');
-                navbar.style.top = '0'; 
-            } else {
-                navbar.classList.remove('sticky');
-            }
-        }
+        const heroRect = hero.getBoundingClientRect();
+        const mainRect = main.getBoundingClientRect();
 
-        window.addEventListener('scroll', updateNavPosition);
-        window.addEventListener('resize', updateNavPosition);
-        updateNavPosition(); 
-    </script>
+        const heroTop = heroRect.top - mainRect.top;
+        const heroHeight = hero.offsetHeight;
+        const navHeight = navbar.offsetHeight;
+        const scrollY = main.scrollTop;
+
+        const triggerPoint = heroTop + heroHeight - navHeight;
+
+    if (scrollY >= triggerPoint) {
+      navbar.classList.add('sticky');
+      navbar.style.top = '0';
+    } else {
+      navbar.classList.remove('sticky');
+      navbar.style.top = `${heroTop + heroHeight - navHeight}px`;
+    }
+  }
+
+  main.addEventListener('scroll', updateNavPosition);
+  window.addEventListener('resize', updateNavPosition);
+  updateNavPosition();
+</script>
+
 
 </body>
 </html>
