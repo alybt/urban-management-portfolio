@@ -325,6 +325,9 @@ section#home.hero-section{
 .experience .timeline {
   position: relative;
   padding: 1rem 0;
+  max-height: calc(100vh - 160px); 
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .experience .timeline::before {
