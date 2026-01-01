@@ -204,14 +204,14 @@
 
         const triggerPoint = heroTop + heroHeight - navHeight;
 
-    if (scrollY >= triggerPoint) {
-      navbar.classList.add('sticky');
-      navbar.style.top = '0';
-    } else {
-      navbar.classList.remove('sticky');
-      navbar.style.top = `${heroTop + heroHeight - navHeight}px`;
-    }
-  }
+            if (scrollY >= triggerPoint) {
+            navbar.classList.add('sticky');
+            navbar.style.top = '0';
+            } else {
+            navbar.classList.remove('sticky');
+            navbar.style.top = `${heroTop + heroHeight - navHeight}px`;
+            }
+        }
 
   main.addEventListener('scroll', updateNavPosition);
   window.addEventListener('resize', updateNavPosition);
