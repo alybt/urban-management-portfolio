@@ -228,22 +228,25 @@ section#home.hero-section{
  
 .about .bg-image {
   width: 105vw;    
-  z-index: 1; 
-  /* z-index: 2;  
+  z-index: 4;   
   padding: 2rem;
   object-position: 0% 50%;
   height: fit-content; 
   object-fit: cover; 
   top: auto;
-  bottom: 0; */
+  bottom: 0;
 }
 
-.about .overlay { 
-  left: 50%;
-  width: 105vw;    
-  transform: translateX(-50%);
-  z-index: 1;
-   
+.about .overlay {  
+      z-index: 1;
+    padding: 2rem;
+    width: 100vw;
+    top: 5vh;
+    left: -25vw;
+    object-position: 75% 50%;
+    right: 50%;
+    height: fit-content;
+    object-fit: cover;
 }
 
 .about .container{
