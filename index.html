@@ -53,10 +53,11 @@
        <section id="about" class="section about about-section">
             <img src="assets/image/Group 23.png" alt="" class="bg-image ease-out">
             <img src="assets/image/Rectangle 31.png" alt="" class="overlay ease-out">
-            <!-- <img src="assets/image/Rectangle 30.png" alt="" class="smoke ease-out">
-            <img src="assets/image/Rectangle 29.png" alt="" class="smoke ease-out">   -->
+            <img src="assets/image/Rectangle 30.png" alt="" class="rectangle2 ease-out">
+            <img src="assets/image/Rectangle 29.png" alt="" class="rectangle3 ease-out">
+            <img src="assets/image/image 28.png" alt="" class="keqing ease-out">  
 
-            <div class = "container">
+            <!-- <div class = "container">
                 <div class="row1 row row-1 mb-2 gx-5">
                     <div class="col-12">
                         <h2>About Me</h2>
@@ -77,8 +78,7 @@
                                 <p>Specialized training in governance, urban planning, and infrastructure management</p> 
                             </div> 
                         </div>
-                        <div class = "row2 row">
-                            <!-- <img src="assets/image/Subtract.png" alt=""> -->
+                        <div class = "row2 row"> 
                             <div class = "row-title row-3">
                                 <h5>Martial & Combat Training</h5>
                             </div>
@@ -107,7 +107,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
 
            
         </section>
@@ -188,6 +188,7 @@
     <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Navbar -->
     <script>
         const navbar = document.querySelector('.navbar');
         const hero = document.querySelector('.hero');
@@ -197,12 +198,12 @@
         const heroRect = hero.getBoundingClientRect();
         const mainRect = main.getBoundingClientRect();
 
-        const heroTop = heroRect.top - mainRect.top;
+        const heroTop = heroRect.top - mainRect.top + 40;
         const heroHeight = hero.offsetHeight;
         const navHeight = navbar.offsetHeight;
         const scrollY = main.scrollTop;
 
-        const triggerPoint = heroTop + heroHeight - navHeight;
+        const triggerPoint = (heroTop + heroHeight - navHeight);
 
             if (scrollY >= triggerPoint) {
             navbar.classList.add('sticky');
@@ -217,6 +218,7 @@
         window.addEventListener('resize', updateNavPosition);
         updateNavPosition();
     </script>
+    <!-- Ease-Out -->
     <script>
         const observerOptions = {
         threshold: 0.15 
