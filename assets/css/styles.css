@@ -203,13 +203,15 @@ section#home.hero-section{
 }
  
 .about .bg-image {
-  z-index: 2;  
+  width: 105vw;    
+  z-index: 1; 
+  /* z-index: 2;  
   padding: 2rem;
   object-position: 0% 50%;
   height: fit-content; 
   object-fit: cover; 
   top: auto;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .about .overlay { 
