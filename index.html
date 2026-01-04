@@ -51,10 +51,10 @@
        </section>
 
        <section id="about" class="section about about-section">
-            <img src="assets/image/Group 23.png" alt="" class="bg-image">
-            <!-- <img src="assets/image/Rectangle 31.png" alt="" class="overlay">
-            <img src="assets/image/Rectangle 30.png" alt="" class="smoke">
-            <img src="assets/image/Rectangle 29.png" alt="" class="smoke"> -->
+            <img src="assets/image/Group 23.png" alt="" class="bg-image ease-out">
+            <!-- <img src="assets/image/Rectangle 31.png" alt="" class="overlay ease-out">
+            <img src="assets/image/Rectangle 30.png" alt="" class="smoke ease-out">
+            <img src="assets/image/Rectangle 29.png" alt="" class="smoke ease-out"> -->
 
             <div class = "container">
                 <div class="row1 row row-1 mb-2 gx-5">
@@ -213,10 +213,31 @@
             }
         }
 
-  main.addEventListener('scroll', updateNavPosition);
-  window.addEventListener('resize', updateNavPosition);
-  updateNavPosition();
-</script>
+        main.addEventListener('scroll', updateNavPosition);
+        window.addEventListener('resize', updateNavPosition);
+        updateNavPosition();
+    </script>
+    <script>
+        const observerOptions = {
+        threshold: 0.15 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+            // Add the class when it enters the viewport
+            entry.target.classList.add('active');
+            } else {
+            // Remove the class when it leaves the viewport
+            entry.target.classList.remove('active');
+            }
+        });
+        }, observerOptions);
+
+        document.querySelectorAll('.ease-out').forEach((img) => {
+        observer.observe(img);
+        });
+    </script>
 
 
 </body>
